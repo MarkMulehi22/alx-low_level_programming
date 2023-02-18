@@ -1,0 +1,23 @@
+#include <stdlib.h>
+#include <stdio.h>
+/**
+ * main- program that prints all possible combinations
+ * of single-digit numbers
+ * Return: 0 (Success)
+ */
+int main(void)
+{
+	int c = 0;
+
+	while (c < 10)
+	{
+		putchar(48 + c);
+		if (c != 9)
+		{
+			putchar(",");
+			putchar(" ");
+		}
+	}
+	putchar("\n");
+	return (0);
+}
