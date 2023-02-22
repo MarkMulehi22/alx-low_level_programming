@@ -1,8 +1,7 @@
 #include "main.h"
 
 /**
- * 10-add.c - function that adds two integers and returns the result.
- * add - function that adds two integers and returns the result
+ * add- function that adds two integers and returns the result
  * Return: 0 (Success)
  * @one: first number input
  * @two: second number input
