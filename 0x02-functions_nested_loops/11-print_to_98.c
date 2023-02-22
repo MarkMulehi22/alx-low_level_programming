@@ -2,10 +2,10 @@
 #include "main.h"
 
 /**
- * print_to_98 - function that prints all natural numbers
- *  from n to 98, followed by a new line
- * last number to be printed 98
- * @n: parameter to be printed
+ * print_to_98 - a function that prints all natural numbers from n to 98
+ * user input's number prints to 98, regardless < 98 or > 98
+ * @n: number input
+ * Return: Always 0 (Success)
  */
 
 void print_to_98(int n)
@@ -15,10 +15,12 @@ void print_to_98(int n)
 		while (n <= 98)
 		{
 			printf("%d", n);
-				if (n != 98)
-					printf(", ");
+			if (n != 98)
+			{
+				printf(", ");
+			}
+			n++;
 		}
-		n++;
 	}
 	else if (n > 98)
 	{
@@ -38,4 +40,3 @@ void print_to_98(int n)
 	}
 	printf("\n");
 }
-
