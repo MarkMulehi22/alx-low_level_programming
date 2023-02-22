@@ -1,16 +1,40 @@
 #include "main.h"
 
 /**
- * 10-add.c - function that adds two integers and returns the result.
- * add - function that adds two integers and returns the result
- * Return: 0 (Success)
- * @one: first number input
- * @two: second number input
+ * print_to_98 - function that prints all natural numbers
+ *  from n to 98, followed by a new line
+ * last number to be printed 98
+ * @n: parameter to be printed
  */
 
-int add(int one, int two)
+void print_to_98(int n)
 {
-	int add(int one, int two)
-{
-	return (one + two);
+	if (n < 98)
+	{
+		while (n <= 98)
+		{
+			printf("%d", n);
+				if (n != 98)
+					printf(", ");
+		}
+		n++;
+	}
+	else if (n > 98)
+	{
+		while (n >= 98)
+		{
+			printf("%d", n);
+			if (n != 98)
+			{
+				printf(", ");
+			}
+			n--;
+		}
+	}
+	else
+	{
+		printf("98");
+	}
+	printf("\n");
 }
+
