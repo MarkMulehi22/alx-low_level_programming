@@ -11,35 +11,23 @@
 
 int main(void)
 {
-	int x = 0;
-	int y = 0;
-	int z = 0;
+	int a = 0, b = 0, c = 0;
 
-	for (x = 1; x <= 100; x++)
+	for (a = 1; a < 101; a++)
 	{
-		y = x % 3;
-		z = x % 5;
-		if (y == 0 && z == 0)
-		{
-			printf("Fizzbuzz");
-		}
-		else if (y == 0 && z != 0)
-		{
-			printf("Fizz");
-		}
-		else if (y != 0 && z == 0)
-		{
+		b = a % 3;
+		c = a % 5;
+		if (b == 0 && c == 0)
+			printf("FizzBuzz");
+		else if (c == 0 && b != 0)
 			printf("Buzz");
-		}
+		else if (b == 0 && c != 0)
+			printf("Fizz");
 		else
-		{
-			printf("%d", x);
-		}
-	if (x < 100)
-	{
-		printf(' ');
+			printf("%d", a);
+		if (a < 100)
+			putchar(' ');
 	}
-	}
-putchar('\n');
-return (0);
+	putchar('\n');
+	return (0);
 }
