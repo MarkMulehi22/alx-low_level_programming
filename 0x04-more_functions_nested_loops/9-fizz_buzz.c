@@ -1,14 +1,9 @@
 #include <stdio.h>
-#include <stdout.h>
-
 /**
- * main- A program that prints 1-100
- *  But for multiples of three print Fizz
- *  and for the multiples of five print Buzz
- *  numbers which are multiples of both three and five print FizzBuzz
- *  Return: 0(Success)
+ * main  - the entry point
+ *
+ * Return: 0 if the program run with success
  */
-
 int main(void)
 {
 	int a = 0, b = 0, c = 0;
